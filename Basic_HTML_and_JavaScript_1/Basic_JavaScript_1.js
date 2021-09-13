@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<body>
 <script src="Hello_World!.js">
 </script>
 function My_First_Function() {
@@ -9,5 +6,3 @@ function My_First_Function() {
 	document.getElemenetById("Irish").innerHTML =
 	result;
 	}
-	</body>
-</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	<style>
+	All me {
+	 background-color: purple;
+	 color: green;
+	 font-weight: bold;
+	 font-size: large;
+	 }
+	</style>
+	<h2 class="font_1">Running an example</h2>
+	<h3 class="font_2">This h3 element is styled per class attribute font_2</h3>
+	<h4 class="font_1">It is okay it still works</h4>
+	</body>
+</html>

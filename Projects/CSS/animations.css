@@ -36,8 +36,8 @@ Menu Section Animation
 }
 
 /*======================
-gallery
-=============*/
+gallery section animation
+========================*/
 
 .photo {
     position: relative;
@@ -45,8 +45,8 @@ gallery
     margin-bottom: 2cm;
     overflow: hidden;
     border-radius: 8px;
-    padding: 1px;
-    border: 1px solid #021a40;
+    padding:1px;
+    border:1px solid #021a40;
     background-color: #ff0;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
 }
@@ -86,6 +86,12 @@ gallery
 /*==============================
 photo overlay transitions
 ================================*/
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
 .photo-overlay:hover {
     opacity: 1;
 }

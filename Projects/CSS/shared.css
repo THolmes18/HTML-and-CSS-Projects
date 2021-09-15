@@ -274,7 +274,7 @@ Contact styles
     border-right: 2px solid #424549;
     border-bottom: 2px solid #424549;
     border-left: 1px solid #090B0D;
-    margin: 10px 1em;
+    margin: 10px 1cm;
     border-radius: 7px;
     background: #13161B;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
@@ -298,7 +298,7 @@ Contact styles
     cursor: pointer;
     font-family: 'raleway', sans-serif;
     font-weight: 600;
-        position: relative;
+    position: relative;
     display: inline;
     float: right;
 }
@@ -320,7 +320,7 @@ Contact styles
     padding: 7px 0px;
     width: 25%;
     font-size: 18px;
-    transition: border-color 0.3s color 0.3s backfroud-color 0.3s;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius: 7px;
     background-color: #797a7b;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
@@ -332,3 +332,13 @@ Contact styles
     box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
+/*==========================
+Footer styles
+============================*/
+.footer {
+    background-color: rgba(100,65,0,.3);
+    color: #000;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}

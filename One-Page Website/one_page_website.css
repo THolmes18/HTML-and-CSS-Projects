@@ -1,0 +1,11 @@
+body {
+    font-family: cursive;
+    font-size: 40px;
+}
+
+input {
+    width:100%;
+    margin: 8px;
+    border: 2px solid blue;
+    border-radius: 4px;
+}

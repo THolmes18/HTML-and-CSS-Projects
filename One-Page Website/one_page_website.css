@@ -1,11 +1,26 @@
 body {
     font-family: cursive;
-    font-size: 40px;
+    font-size: 20px;
+    background-color: rgb(218, 209, 192);
 }
 
 input {
-    width:100%;
+    width:50%;
     margin: 8px;
     border: 2px solid blue;
     border-radius: 4px;
 }
+/*=========================
+Gallery
+===========================*/
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /*This ensuress that the image cannot
+    render outside of their container
+    without forcing any scrollbars*/
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;

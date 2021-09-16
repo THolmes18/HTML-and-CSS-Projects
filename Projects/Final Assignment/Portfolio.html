@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<!----head---->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>T'Ana Holmes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/Portfolio.css">
+    </head>
+<!-----End head---->
+<!-----Body----->
+<body class="background">
+<!----Navbar--->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="GitHub">GitHub</a>
+        <a href="Contact">Contact</a>
+    </div>
+<!--The breaks are adding space between navbar and first heading-->
+<br>
+<br>
+
+<!--Background Video-->
+    <div id="Home">
+        <video autoplay muted loop id="Waterfall">
+            <source src="./waterfall.mp4" type="video/mp4">
+            <!--This will display if the browser is unsupported-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video Text-->
+    <div class="Video_Text">
+        <h1 class="white-text">T'Ana's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>“Our task must be to free ourselves... by widening our circle of compassion to embrace 
+                    <br>all living creatures and the whole of nature and it's beauty.”
+                </q>
+                <br> -Albert Einstein
+                <br>
+                <br> My name is T'Ana. Welcome to my portfolio website! 
+                <br> This site will allow you to understand my background and experience.
+                <br> Thank you for stopping by, enjoy!
+            </p>
+        </strong>
+    </div>
+<!--End Video Text-->
+
+<!--About Section-->
+    <div class="Row" id="About">
+    <!--Left column-->
+        <div class="Column_2">
+            <img src="./sea_tutrle.jpeg" alt="sea_tutrle">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a software developer who truly loves coding! I am a mother of two, I love spending time with my family as well as traveling the globe!
+                <br>
+                <br> I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Game Developer Boot Camp. I am trained and experienced in the following web and programming languages: HTML, CSS, Javascript, SQL, C# and more.
+                <br>
+                <br> I am a full-stack developer and would love to work on your project! <a href="#Contact">Contact </a> me below!
+            </p>
+        </div>
+    </div>
+<!--End About Section-->
+
+<!--GitHub Section-->
+    <div class="Row" id="GitHub">
+        <!--Left column-->
+        <div class="Column_1">
+            <h1>Github</h1>
+            <p>
+                You can view my coding projects on my GitHub profile here:
+                <br>
+                <p class="center"><a href="https://github.com/THolmes18" target="_blank">T'Ana's Github</a>  </p>
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <a href="https://github.com/THolmes18" target="_blank"><img src="./GitHub.png" alt="GitHub logo"></a>
+        </div>
+    </div>
+<!--contact section-->
+    <div class="Row" id="Contact">
+        <!--left contact image-->
+        <div class="Column_2_tall">
+            <img src="./contact.jpg" alt="Contact_Image">
+        </div>
+        <!--right contact-->
+        <div class="Column_1_tall">
+            <h1>Contact</h1>
+        <!--Where and how to send form data;staying blank!-->
+            <form action="" method="https://formspree.io/f/mjvjlyag"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                <label>Message</label>
+                    <input type="text" id="Message" name="Message" placeholder="Please enter your message here">
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p>
+            <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+        </p>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+

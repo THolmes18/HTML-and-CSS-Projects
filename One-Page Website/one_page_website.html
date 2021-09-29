@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Luxury Getaway</title>
 		<link rel="stylesheet" href="one_page_website.css">
+		<script src="./JS/one_page_website.js"></script>
 	</head>
 
 		<header>
@@ -41,53 +42,76 @@
 		  <h1>GALLERY</h1>
 		  	<div>
 		  
-		  <!-- Photo Container 1-->
-		  	<div>
-		   		<div>
-				<img src="./images/thumb_1.jpg" alt="Indoor/Outdoor Resort" width="1280" height="853">
-		    	<div>
-			 		<h3>Click to Enlarge</h3>
-			 		<p>The ultimate getaway, far from the city, amazing nature views.
+				<!--Images used to open lightbox-->
+				<div class="row">
+					<div class="column">
+						<img src="./images/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./images/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./images/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="./images/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+
 				</div>
-			</div>
-		</div>
-	<!--End Photo Container 1 -->
-	
-	  <!-- Photo Container 2-->
-		  	<div>
-		   		<div>
-				<img src="./images/thumb_2.jpg" alt="Outdoor Getaway" width="2048" height="1365">
-		    		<div>
-			 		<h3>Click to Enlarge</h3>
-			 		<p>Desert Luxury Getaway.
+				<!--The lightbox/modal-->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="img1_wide.jpg" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="img2_wide.jpg" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="img3_wide.jpg" style="width:100%">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="img4_wide.jpg" style="width:100%">
+						  </div>
+					  
+						  <!-- Next/previous controls -->
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <!-- Caption text -->
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					  
+						  <!-- Thumbnail image controls -->
+						  <div class="column">
+							<img class="demo" src="img1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" alt="Indoor/Outdoor Resort">
+						  </div>
+					  
+						  <div class="column">
+						  </div>
+						  </div>
+							<img class="demo" src="img2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" alt="Outdoor Getaway" width="100"> 
+						  </div>
+					  
+						  <div class="column">
+							<img class="demo" src="img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" alt="Ocean Resort" width="100">
+						  </div>
+					  
+						  <div class="column">
+							<img class="demo" src="img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" alt="Nightview Ocean Front" width="100">
+						  </div>
 					</div>
 				</div>
-			</div>
-	<!--End Photo Container 2 -->
-	
-				  <!-- Photo Container 3-->
-		  	<div>
-		   		<div>
-				<img src="./images/thumb_3.jpg" alt="Ocean Resort" width="1920" height="1080">
-		    		<div>
-			 		<h3>Click to Enlarge</h3>
-			 		<p>Ocean Front Resort
-					</div>
-				</div>
-			</div>
-	<!--End Photo Container 3 -->
-	
-			  <!-- Photo Container 4-->
-		  	<div>
-		   		<div>
-				<img src="./images/thumb_4.jpg" alt="Nightview Ocean Front" width="900" height="601">
-		    		<div>
-					 <h3>Click to Enlarge</h3>
-			 		<p>Africa's Hidden Gem
-					</div>
-				</div>
-			</div>
-	<!--End Photo Container 4 -->
+		 
 	
 	<!--Video-->
 	<div>
@@ -96,6 +120,7 @@
 	</div>
 </section>
 <!--END GALLERY-->
+
 
 	<!--Reservations-->
 	<section id="reservations">

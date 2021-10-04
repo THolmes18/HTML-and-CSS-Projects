@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width"/>
         <title>T'Ana Holmes</title>
         <link rel="stylesheet" type="text/css" href="./portfolio.css">
+        <script src="./portfolio.js"></script>
     </head>
 <!-----End head---->
 <!-----Body----->
@@ -47,6 +48,58 @@
         </strong>
     </div>
 <!--End Video Text-->
+
+<!--Slideshow Section-->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+                <!--Slide 1 of 6-->
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./fallen_tree.jpeg" alt="Fallen tree picture">
+                    <div class="text">In nature trees fall often.</div>
+                </div>
+                    <!--Slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./views.jpg" alt="gorgeous views">
+                        <div class="text">The beauty of nature.</div>
+                    </div>
+                    <!--Slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./hills.jpeg" alt="gorgeous views">
+                        <div class="text">Relax.</div>
+                    </div>
+                    <!--Slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="daisy_basket.jpeg" alt="gorgeous views">
+                        <div class="text">Calm.</div>
+                    </div>
+                    <!--Slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="ocean.jpeg" alt="gorgeous views">
+                        <div class="text">The Ocean.</div>
+                    </div>
+                    <!--Slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="beautys.jpg" alt="gorgeous views">
+                        <div class="text">Peace</div>
+                    </div>
+                        <!--Previous and Next buttons-->
+                        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br> <!--Adds a space between the slideshow images and the dots-->
+
+                    <!--Slideshow dots-->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+            </div>
 
 <!--About Section-->
     <div class="Row" id="About">

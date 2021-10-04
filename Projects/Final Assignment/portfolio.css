@@ -577,3 +577,107 @@ form:hover {
     opacity: 1;
 }
 /***** END OF CONTACT FORM STYLING *****/
+
+/**Slideshow Styling**/
+#Slideshow_Background {
+    background: rgba(225, 255, 255, 0.35); /*creates a slightly transparent white background placed over the video in the background*/
+}
+
+.mySlides{
+    display: none; /*prevents the images from being displayed, JS will display this */
+}
+
+/*Slideshow section /container*/
+#Slideshow_Container {
+    width: 39.5vw; /*Relative sizing of the container for the slideshow set to 39.5% of the viewport width*/
+    height: auto; /*height of the container is automatically adjusted based on the content it is displaying */
+    padding-top: 4%; /*Adds a small padding to the top of the slideshow container */
+    position: relative; /*This sets the container relativeto its normal positioning */
+    margin: auto; /*horizontally centers the container on the page*/
+}
+
+/*images conrtained within the slideshow */
+.Slideshow_Images {
+    vertical-align: middle;
+    height: 500px; /*based on content, if images are different sizes they will display at different sixes.*/
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75); /*Adds a shadow around the slideshow images */
+    width: 100%;
+}
+
+/*Next and previous buttons */
+.Previous, .Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw;
+    color: violet;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.Next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.Previous:hover, .Next:hover {
+    background-color: yellow;
+    color: whitesmoke;
+}
+
+/*slideshow text*/
+.text {
+    color: whitesmoke;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    background-color: turquoise;
+    font-weight: bold;
+    border-radius: 0px 0px 7px 7px;
+}
+
+/* Styling dots under slideshow*/
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: .25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1; /*ensures the dots will be displayed above any other elements*/
+}
+
+/*hover effects for the slideshow dots*/
+.active, .dot:hover {
+    background-color: black;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+@webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+/*******End Slideshow Styling**********/

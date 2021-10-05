@@ -14,9 +14,11 @@
 <!----Navbar--->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
         <a href="#About">About</a>
-        <a href="GitHub">GitHub</a>
-        <a href="Contact">Contact</a>
+        <a href="#GitHub">GitHub</a>
+        <!--Onclick and ondbclick functions added to open and close the contact form-->
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
 <!--The breaks are adding space between navbar and first heading-->
 <br>
@@ -56,7 +58,7 @@
                 <!--Slide 1 of 6-->
                 <div class="mySlides fade">
                     <img class="Slideshow_Images" src="./fallen_tree.jpeg" alt="Fallen tree picture">
-                    <div class="text">In nature trees fall often.</div>
+                    <div class="text">Fallen trees.</div>
                 </div>
                     <!--Slide 2 of 6-->
                     <div class="mySlides fade">
@@ -80,8 +82,8 @@
                     </div>
                     <!--Slide 6 of 6-->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="beautys.jpg" alt="gorgeous views">
-                        <div class="text">Peace</div>
+                        <img class="Slideshow_Images" src="./beautys.jpg" alt="gorgeous views">
+                        <div class="text"> <a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
                     </div>
                         <!--Previous and Next buttons-->
                         <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -115,7 +117,7 @@
                 <br>
                 <br> I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Game Developer Boot Camp. I am trained and experienced in the following web and programming languages: HTML, CSS, Javascript, SQL, C# and more.
                 <br>
-                <br> I am a full-stack developer and would love to work on your project! <a href="#Contact">Contact </a> me below!
+                <br> I am a full-stack developer and would love to work on your project! <a onclick="openForm()">Contact</a> me below!
             </p>
         </div>
     </div>
@@ -137,24 +139,24 @@
             <a href="https://github.com/THolmes18" target="_blank"><img src="./GitHub.png" alt="GitHub logo"></a>
         </div>
     </div>
-<!--contact section-->
-    <div class="Row" id="Contact">
-        <!--left contact image-->
-        <div class="Column_2_tall">
-            <img src="./contact.jpg" alt="Contact_Image">
-        </div>
-        <!--right contact-->
-        <div class="Column_1_tall">
+<!--contact form-->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learningcodinganywhere.com" method="POST" class="form-container">
+            <!--were using a free online service to send contact info to an email of our choosing-->
             <h1>Contact</h1>
-        <!--Where and how to send form data;staying blank!-->
-            <form action="" method="https://formspree.io/f/mjvjlyag"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                <label>Message</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please enter your message here">
-                    <input type="submit" value="SUBMIT">
+            <label for="name">Name</b></label>
+             <input type="text" placeholder="Please enter your name here" name="name" required>
+            <label for="phone">Phone</b></label>
+             <input type="text" placeholder="Please enter your phone number here" name="phone">
+            <label for="email">Email</b></label>
+             <input type="text" placeholder="Please enter your email here" name="email" required>
+            <label for="message">Message</b></label>
+             <input type="text" placeholder="Type your message here" name="message">
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
             </form>
         </div>
     </div>

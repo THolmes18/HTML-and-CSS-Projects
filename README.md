@@ -1,5 +1,10 @@
 # HTML-and-CSS-Projects
 This is for my HTML and CSS Projects at The Tech Academy.
+I have created websites as well as desgined them using CSS, Bootstrap and JavaScript.
+These projects are amazing and I truly love developing them. 
+It teaches me to continue developing as well as show off skills.
+I know how to sharpen my skills when necessary (always) which will result into better sites.
+A couple of my projects are listen below:
 
 Projects:
 
